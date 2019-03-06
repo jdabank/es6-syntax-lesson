@@ -63,6 +63,7 @@ const error = (status) => {
 }
 ```
 
+**Spread Syntax**
 
 ES6 introduced the spread syntax for dealing with cases when we want to generate new versions of Arrays and Objects in a clean, readable manner.
 

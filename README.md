@@ -31,12 +31,6 @@ function(status) {
 **ES6 Arrow Functions**
 
 ```js
-const error = () => console.error('404)
-```
-
-**ES6 Arrow Functions**
-
-```js
 const error = (status) => { 
   console.error(status)
 }
@@ -46,6 +40,12 @@ You can go one step further:
 
 ```js
 const error = status => console.error(status)
+```
+
+No parameters:
+
+```js
+const error = () => console.error('404')
 ```
 
 Multiple Parameters:

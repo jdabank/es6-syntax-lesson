@@ -28,7 +28,7 @@ function(status) {
 
 # ES6
 
-**ES6 Arrow Functions**
+### ES6 Arrow Functions
 
 ```js
 const error = (status) => { 
@@ -63,7 +63,7 @@ const error = (status) => {
 }
 ```
 
-**Spread Syntax**
+### Spread Syntax
 
 ES6 introduced the spread syntax for dealing with cases when we want to generate new versions of Arrays and Objects in a clean, readable manner.
 

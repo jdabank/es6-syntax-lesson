@@ -167,7 +167,7 @@ console.log(allPeople);
 
 Note how latter values will "overwrite" former ones:
 
-```
+```js
 const letters = {
   a: 1,
   b: 2,

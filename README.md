@@ -4,18 +4,18 @@
 
 ### Review
 
-**Function Expression:**
-
-```js
-const error = function(status) {
-  console.error(status)
-}
-```
-
 **Function Declaraion:**
 
 ```js
 function error(status) {
+  console.error(status)
+}
+```
+
+**Function Expression:**
+
+```js
+const error = function(status) {
   console.error(status)
 }
 ```

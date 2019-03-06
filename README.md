@@ -18,7 +18,7 @@ const error = function(status) {
 }
 ```
 
-**Anonymouse Function:**
+**Anonymous Function:**
 
 ```js
 function(status) {

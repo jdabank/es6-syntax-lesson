@@ -2,7 +2,7 @@
 
 # Review
 
-**Function Declaraion:**
+**Function Declaration:**
 
 ```js
 function error(status) {

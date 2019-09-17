@@ -2,7 +2,7 @@
 
 # Review
 
-React and ES6 are closely intertwined so let's begin by separating what is React and what is ES6. This will help us debug or code and have a better understanding of what is happening. 
+React and ES6 are closely intertwined so let's begin by separating what is React and what is ES6. This will help us debug or code and have a better understanding of React. 
 
 **Function Declaration:**
 

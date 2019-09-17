@@ -366,17 +366,19 @@ will yield
 Memphis
 ```
 ```
-function getCoords () {
-  return {
-    x: 10,
-    y: 22
+javascript
+ const getName = () => {
+    return {
+      first: 'Steve',
+      last: 'VanWoerkom'
+    }
   }
-}
-var {x, y} = getCoords()
-console.log(x)
-// <- 10
+let {first, last} = getCoords()
+
+console.log(first)
+// <- Steve
 console.log(y)
-// <- 22
+// <- VanWoerkom
 ```
 
 #### Practice

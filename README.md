@@ -365,8 +365,7 @@ will yield
 { first: 'Bobby', last: 'Talley' }
 Memphis
 ```
-```
-javascript
+```javascript
  const getName = () => {
     return {
       first: 'Steve',

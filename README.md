@@ -365,6 +365,19 @@ will yield
 { first: 'Bobby', last: 'Talley' }
 Memphis
 ```
+```
+function getCoords () {
+  return {
+    x: 10,
+    y: 22
+  }
+}
+var {x, y} = getCoords()
+console.log(x)
+// <- 10
+console.log(y)
+// <- 22
+```
 
 #### Practice
 

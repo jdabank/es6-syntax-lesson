@@ -1,8 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  WEB DEVELOPMENT IMMERSIVE
 
-# Review
-
-React and ES6 are closely intertwined so let's begin by separating what is React and what is ES6. This will help us debug or code and have a better understanding of React. 
+React and ES6 are closely intertwined, so let's get some review time to separate what is *React* and what is *ES6*. This will help us debug or code and have a better understanding of React. 
 
 **Function Declaration:**
 
@@ -28,9 +26,11 @@ function(status) {
 }
 ```
 
-# ES6
+## ES6
 
-### ES6 Arrow Functions
+ES6 (also referred to as ECMA Script 2015
+
+### Arrow Functions
 
 ```js
 const error = (status) => { 

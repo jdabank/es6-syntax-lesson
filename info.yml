@@ -2,12 +2,11 @@
 
 # Required fields: unit, section and type
 
-unit: (unit here)
+unit: 1
 
-section: (section here)
+section: javascript
 
-type: (type here)
-
+type: lesson
 
 # optional fields:
   # notes

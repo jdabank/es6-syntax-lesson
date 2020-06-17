@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  WEB DEVELOPMENT IMMERSIVE
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) SOFTWARE ENGINEERING IMMERSIVE
 
 React and ES6 (also known as ECMAScript 6, ECMAScript 2015, or ECMAScript Harmony) are _closely_ intertwined, so let's take some time to review and to differentiate the two. Laying this groundwork will help us debug our code in the near future, while also granting us a better understanding of the React framework.
 

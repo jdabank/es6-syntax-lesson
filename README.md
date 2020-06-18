@@ -357,7 +357,7 @@ const city = person.city;
 
 console.log(first_name);
 console.log(last_name);
-console.log(last_name);
+console.log(city);
 ```
 
 But ES6 introduced the object destructuring assignment, which allowed for single line assignments:

@@ -27,13 +27,13 @@ Before ES6, variables were declared using the `var` keyword. ES6 introduced `let
 Before ES6, variables in strings had to be concatenated:
 
 ```js
-'The sum of ' + a + ' and ' + b + ' is ' + (a+b) + '.'
+"The sum of " + a + " and " + b + " is " + (a + b) + ".";
 ```
 
 Thankfully, ES6 gave us template literals:
 
 ```js
-`The sum of ${a} and ${b} is ${a + b}.`
+`The sum of ${a} and ${b} is ${a + b}.`;
 ```
 
 ### Functions
@@ -44,16 +44,16 @@ Before ES6, to create a function, we had:
 
 ```js
 function error(status) {
-  console.error(status)
+  console.error(status);
 }
 ```
 
 **Function Expressions:**
 
 ```js
-const error = function(status) {
-  console.error(status)
-}
+const error = function (status) {
+  console.error(status);
+};
 ```
 
 **Anonymous Functions:**
@@ -68,35 +68,35 @@ function(status) {
 
 ```js
 const error = (status) => {
-  console.error(status)
-}
+  console.error(status);
+};
 ```
 
 You can go one step further:
 
 ```js
-const error = status => console.error(status)
+const error = (status) => console.error(status);
 ```
 
 No parameters:
 
 ```js
-const error = () => console.error('404')
+const error = () => console.error("404");
 ```
 
 Multiple Parameters:
 
 ```js
-const error = (status, msg) => console.error(status, msg)
+const error = (status, msg) => console.error(status, msg);
 ```
 
 Multiple lines:
 
 ```js
 const error = (status) => {
-  let msg = 'Error: '
-  console.error(msg, status)
-}
+  let msg = "Error: ";
+  console.error(msg, status);
+};
 ```
 
 ### Array & Object Manipulation with the Spread Syntax
@@ -170,19 +170,19 @@ Best of all, this isn't limited to Arrays. Similar operations are possible with 
 
 ```js
 const people = {
-  'JayZ': { shirt: 'goldfish' },
-  'Shay': { shirt: 'David Hasselhoff' },
-  'JohnMaster': { shirt: 'button down' }
+  JayZ: { shirt: "goldfish" },
+  Tara: { shirt: "David Hasselhoff" },
+  JohnMaster: { shirt: "button down" },
 };
 
 const otherPeople = {
-  'Jason': { shirt: 'coffee' },
-  'Mimi': { shirt: 'wonder woman' }
+  Jason: { shirt: "coffee" },
+  Mimi: { shirt: "wonder woman" },
 };
 
 const allPeople = {
   ...people,
-  ...otherPeople
+  ...otherPeople,
 };
 
 console.log(allPeople);
@@ -194,7 +194,7 @@ console.log(allPeople);
 
 ```bash
 { JayZ: { shirt: 'goldfish' },
-  Shay: { shirt: 'David Hasselhoff' },
+  Tara: { shirt: 'Nine Inch Nails' },
   JohnMaster: { shirt: 'button down' },
   Jason: { shirt: 'coffee' },
   Mimi: { shirt: 'wonder woman' } }
@@ -208,18 +208,18 @@ Do note, however, that latter values will "overwrite" former values:
 const letters = {
   a: 1,
   b: 2,
-  c: 3
+  c: 3,
 };
 
 const moreLetters = {
   d: 4,
   e: 5,
-  a: 10
+  a: 10,
 };
 
 const allLetters = {
   ...letters,
-  ...moreLetters
+  ...moreLetters,
 };
 
 console.log(allLetters);
@@ -242,20 +242,20 @@ Just like Arrays, Objects can mix directly declared keys with `spread`ed values:
 const letters = {
   a: 1,
   b: 2,
-  c: 3
+  c: 3,
 };
 
 const moreLetters = {
   d: 4,
   e: 5,
-  a: 10
+  a: 10,
 };
 
 const allLetters = {
   ...letters,
   g: 20,
   u: 30,
-  ...moreLetters
+  ...moreLetters,
 };
 
 console.log(allLetters);
@@ -272,7 +272,7 @@ console.log(allLetters);
 
 #### Use Cases & Drawbacks
 
-The spread operator is quickly becoming one of the key work horses of ES6.  The flexible and clean syntax allows smooth merging of data from disparate sources as well as a safe way to handle state updates in frameworks like React.
+The spread operator is quickly becoming one of the key work horses of ES6. The flexible and clean syntax allows smooth merging of data from disparate sources as well as a safe way to handle state updates in frameworks like React.
 
 There is still a problem. The spread operator only generates a new _shallow_ value of the data structure that is being unpacked. If an Array or Object has nested Arrays or Objects as elements, then the nested elements are not similarly `spread`ed.
 
@@ -282,7 +282,7 @@ Without nested compound data structures, everything is fine:
 const letters = {
   a: 1,
   b: 2,
-  c: 3
+  c: 3,
 };
 
 const allLetters = {
@@ -293,8 +293,8 @@ const allLetters = {
 
 allLetters.a = 20;
 
-console.log('all letters: ', allLetters);
-console.log('letters: ', letters)
+console.log("all letters: ", allLetters);
+console.log("letters: ", letters);
 ```
 
 <details>
@@ -317,7 +317,7 @@ const letters = {
   vowels: { a: 1 },
   a: 1,
   b: 2,
-  c: 3
+  c: 3,
 };
 
 const allLetters = {
@@ -327,8 +327,8 @@ const allLetters = {
 
 allLetters.vowels.a = 20;
 
-console.log('all letters: ', allLetters);
-console.log('letters: ', letters)
+console.log("all letters: ", allLetters);
+console.log("letters: ", letters);
 ```
 
 <details>
@@ -349,7 +349,11 @@ In addition to the spread syntax, ES6 also introduced a mechanism for extracting
 Before ES6, extracting object properties for assignment would require:
 
 ```js
-const person = { first_name: 'Shay', last_name: 'Kelley', city: 'New York City' };
+const person = {
+  first_name: "Tara",
+  last_name: "Solbrig",
+  city: "New York City",
+};
 
 const first_name = person.first_name;
 const last_name = person.last_name;
@@ -363,7 +367,11 @@ console.log(city);
 But ES6 introduced the object destructuring assignment, which allowed for single line assignments:
 
 ```js
-const person = { first_name: 'Shay', last_name: 'Kelley', city: 'New York City' };
+const person = {
+  first_name: "Tara",
+  last_name: "Solbrig",
+  city: "New York City",
+};
 
 const { first_name, last_name, city } = person;
 
@@ -373,7 +381,7 @@ console.log(first_name);
 The above will log the value of `first_name` to the console:
 
 ```bash
-'Shay'
+'Tara'
 ```
 
 Under the hood, _variable names_ matching the _key names_ of the object are auto-initialized and assigned the value associated with that key, from the object. (If the key does not exist in the object, its value will be `undefined`.)
@@ -381,12 +389,12 @@ Under the hood, _variable names_ matching the _key names_ of the object are auto
 For what it's worth, this same effect works in "reverse". Key/value pairs can be inserted into an object literal if a matching variable is found in scope.
 
 ```js
-const first = 'Shay';
-const last = 'Kelley'
+const first = "Tara";
+const last = "Solbrig";
 
 const person = {
   first,
-  last
+  last,
 };
 console.log(person);
 ```
@@ -394,24 +402,24 @@ console.log(person);
 The above will log the following to the console
 
 ```bash
-{ first: 'Shay', last: 'Kelley' }
+{ first: 'Tara', last: 'Solbrig' }
 ```
 
 Finally, the spread, used in these contexts, will grab everything in the destructure assignment that is not explicitly extracted into a variable.
 
 ```js
-const person = { first_name: 'Shay', last_name: 'Kelley', city: 'New York City' };
+const person = { first_name: "Tara", last_name: "Solbrig", city: "Trenton" };
 
 const { city, ...other } = person;
 
-console.log(other)
+console.log(other);
 console.log(city);
 ```
 
 The console will log:
 
 ```bash
-{ first: 'Shay', last: 'Kelley' }
+{ first: 'Tara', last: 'Solbrig' }
 'New York City'
 ```
 

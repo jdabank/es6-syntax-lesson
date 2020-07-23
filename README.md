@@ -171,7 +171,7 @@ Best of all, this isn't limited to Arrays. Similar operations are possible with 
 ```js
 const people = {
   JayZ: { shirt: "goldfish" },
-  Tara: { shirt: "David Hasselhoff" },
+  Tara: { shirt: "Nine Inch Nails" },
   JohnMaster: { shirt: "button down" },
 };
 
@@ -194,7 +194,7 @@ console.log(allPeople);
 
 ```bash
 { JayZ: { shirt: 'goldfish' },
-  Tara: { shirt: 'Nine Inch Nails' },
+  Tara: { shirt: 'Nine InNailsch ' },
   JohnMaster: { shirt: 'button down' },
   Jason: { shirt: 'coffee' },
   Mimi: { shirt: 'wonder woman' } }

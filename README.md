@@ -381,7 +381,7 @@ console.log(first_name);
 The above will log the value of `first_name` to the console:
 
 ```bash
-'Tara'
+'Stefon'
 ```
 
 Under the hood, _variable names_ matching the _key names_ of the object are auto-initialized and assigned the value associated with that key, from the object. (If the key does not exist in the object, its value will be `undefined`.)

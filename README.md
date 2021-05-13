@@ -6,7 +6,7 @@ React and ES6 (also known as ECMAScript 6, ECMAScript 2015, or ECMAScript Harmon
 
 ECMAScript is a scripting language _specification_- an international, technical standard- that was introduced by its maintainer organization, the European Computer Manufacturers Association (ECMA), to help standardize the JavaScript language.
 
-_Fun Fact: ECMA-262 specifically refers to ECMAScript, the JavaScript specification, but ECMA is also responsible for standardizing FORTRAN (ECMA-9), C# (ECMA-334), C++ (ECMA-372), APIs (ECMA-402), JSON (ECMA-404), and many, many more._
+_Fun Fact: [ECMA-262](https://tc39.es/ecma262/) specifically refers to ECMAScript, the JavaScript specification, but ECMA, the standards organization, is also responsible for standardizing FORTRAN (ECMA-9), C# (ECMA-334), C++ (ECMA-372), APIs (ECMA-402), JSON (ECMA-404), and many, many more._
 
 > Learn More: [ECMA Standards](https://en.wikipedia.org/wiki/List_of_Ecma_standards)
 
@@ -14,7 +14,7 @@ _Fun Fact: ECMA-262 specifically refers to ECMAScript, the JavaScript specificat
 
 ES6, the specification version that was updated and ratified in June 2015, added _significant_ features that have come to underpin modern JavaScript applications, which is why we'll be focusing on it this morning.
 
-> Learn More: In June 2019, the 10th version– _ES2019_– was released, making it the most recent update; in April 2020, the features that will be included in the _ES2020_ release were finalized, but it has yet to be ratified. You will often see the next version of ES referred to as _ES.Next_.
+> Learn More: In June 2020, the 11th version– _ES2020_– was released, making it the most recent update. You will often see the upcoming version of ES referred to as _ES.Next_.
 
 Some familiar features...
 

@@ -171,7 +171,7 @@ Best of all, this isn't limited to Arrays. Similar operations are possible with 
 ```js
 const people = {
   JayZ: { shirt: "goldfish" },
-  Tara: { shirt: "Nine Inch Nails" },
+  Ashley: { shirt: "Nine Inch Nails" },
   JohnMaster: { shirt: "button down" },
 };
 
@@ -194,7 +194,7 @@ console.log(allPeople);
 
 ```bash
 { JayZ: { shirt: 'goldfish' },
-  Tara: { shirt: 'Nine InNailsch ' },
+  Ashley: { shirt: 'Nine InNailsch ' },
   JohnMaster: { shirt: 'button down' },
   Jason: { shirt: 'coffee' },
   Mimi: { shirt: 'wonder woman' } }
@@ -350,8 +350,8 @@ Before ES6, extracting object properties for assignment would require:
 
 ```js
 const person = {
-  first_name: "Tara",
-  last_name: "Solbrig",
+  first_name: "Stefon",
+  last_name: "Simmons",
   city: "New York City",
 };
 
@@ -368,8 +368,8 @@ But ES6 introduced the object destructuring assignment, which allowed for single
 
 ```js
 const person = {
-  first_name: "Tara",
-  last_name: "Solbrig",
+  first_name: "Stefon",
+  last_name: "Simmons",
   city: "New York City",
 };
 
@@ -389,8 +389,8 @@ Under the hood, _variable names_ matching the _key names_ of the object are auto
 For what it's worth, this same effect works in "reverse". Key/value pairs can be inserted into an object literal if a matching variable is found in scope.
 
 ```js
-const first = "Tara";
-const last = "Solbrig";
+const first = "Stefon";
+const last = "Simmons";
 
 const person = {
   first,
@@ -402,13 +402,13 @@ console.log(person);
 The above will log the following to the console
 
 ```bash
-{ first: 'Tara', last: 'Solbrig' }
+{ first: 'Stefon', last: 'Simmons' }
 ```
 
 Finally, the spread, used in these contexts, will grab everything in the destructure assignment that is not explicitly extracted into a variable.
 
 ```js
-const person = { first_name: "Tara", last_name: "Solbrig", city: "Trenton" };
+const person = { first_name: "Stefon", last_name: "Simmons", city: "New York" };
 
 const { city, ...other } = person;
 
@@ -419,7 +419,7 @@ console.log(city);
 The console will log:
 
 ```bash
-{ first: 'Tara', last: 'Solbrig' }
+{ first: 'Stefon', last: 'Simmons' }
 'New York City'
 ```
 

@@ -6,7 +6,7 @@ React and ES6 (also known as ECMAScript 6, ECMAScript 2015, or ECMAScript Harmon
 
 ECMAScript is a scripting language _specification_- an international, technical standard- that was introduced by its maintainer organization, the European Computer Manufacturers Association (ECMA), to help standardize the JavaScript language.
 
-_Fun Fact: ECMA-262 specifically refers to ECMAScript, the JavaScript specification, but ECMA is also responsible for standardizing FORTRAN (ECMA-9), C# (ECMA-334), C++ (ECMA-372), APIs (ECMA-402), JSON (ECMA-404), and many, many more._
+_Fun Fact: [ECMA-262](https://tc39.es/ecma262/) specifically refers to ECMAScript, the JavaScript specification, but ECMA, the standards organization, is also responsible for standardizing FORTRAN (ECMA-9), C# (ECMA-334), C++ (ECMA-372), APIs (ECMA-402), JSON (ECMA-404), and many, many more._
 
 > Learn More: [ECMA Standards](https://en.wikipedia.org/wiki/List_of_Ecma_standards)
 
@@ -14,7 +14,7 @@ _Fun Fact: ECMA-262 specifically refers to ECMAScript, the JavaScript specificat
 
 ES6, the specification version that was updated and ratified in June 2015, added _significant_ features that have come to underpin modern JavaScript applications, which is why we'll be focusing on it this morning.
 
-> Learn More: In June 2019, the 10th version– _ES2019_– was released, making it the most recent update; in April 2020, the features that will be included in the _ES2020_ release were finalized, but it has yet to be ratified. You will often see the next version of ES referred to as _ES.Next_.
+> Learn More: In June 2020, the 11th version– _ES2020_– was released, making it the most recent update. You will often see the upcoming version of ES referred to as _ES.Next_.
 
 Some familiar features...
 
@@ -171,7 +171,7 @@ Best of all, this isn't limited to Arrays. Similar operations are possible with 
 ```js
 const people = {
   JayZ: { shirt: "goldfish" },
-  Tara: { shirt: "Nine Inch Nails" },
+  Ashley: { shirt: "Nine Inch Nails" },
   JohnMaster: { shirt: "button down" },
 };
 
@@ -194,7 +194,7 @@ console.log(allPeople);
 
 ```bash
 { JayZ: { shirt: 'goldfish' },
-  Tara: { shirt: 'Nine InNailsch ' },
+  Ashley: { shirt: 'Nine InNailsch ' },
   JohnMaster: { shirt: 'button down' },
   Jason: { shirt: 'coffee' },
   Mimi: { shirt: 'wonder woman' } }
@@ -350,8 +350,8 @@ Before ES6, extracting object properties for assignment would require:
 
 ```js
 const person = {
-  first_name: "Tara",
-  last_name: "Solbrig",
+  first_name: "Stefon",
+  last_name: "Simmons",
   city: "New York City",
 };
 
@@ -368,8 +368,8 @@ But ES6 introduced the object destructuring assignment, which allowed for single
 
 ```js
 const person = {
-  first_name: "Tara",
-  last_name: "Solbrig",
+  first_name: "Stefon",
+  last_name: "Simmons",
   city: "New York City",
 };
 
@@ -381,7 +381,7 @@ console.log(first_name);
 The above will log the value of `first_name` to the console:
 
 ```bash
-'Tara'
+'Stefon'
 ```
 
 Under the hood, _variable names_ matching the _key names_ of the object are auto-initialized and assigned the value associated with that key, from the object. (If the key does not exist in the object, its value will be `undefined`.)
@@ -389,8 +389,8 @@ Under the hood, _variable names_ matching the _key names_ of the object are auto
 For what it's worth, this same effect works in "reverse". Key/value pairs can be inserted into an object literal if a matching variable is found in scope.
 
 ```js
-const first = "Tara";
-const last = "Solbrig";
+const first = "Stefon";
+const last = "Simmons";
 
 const person = {
   first,
@@ -402,13 +402,13 @@ console.log(person);
 The above will log the following to the console
 
 ```bash
-{ first: 'Tara', last: 'Solbrig' }
+{ first: 'Stefon', last: 'Simmons' }
 ```
 
 Finally, the spread, used in these contexts, will grab everything in the destructure assignment that is not explicitly extracted into a variable.
 
 ```js
-const person = { first_name: "Tara", last_name: "Solbrig", city: "Trenton" };
+const person = { first_name: "Stefon", last_name: "Simmons", city: "New York" };
 
 const { city, ...other } = person;
 
@@ -419,7 +419,7 @@ console.log(city);
 The console will log:
 
 ```bash
-{ first: 'Tara', last: 'Solbrig' }
+{ first: 'Stefon', last: 'Simmons' }
 'New York City'
 ```
 
